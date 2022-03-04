@@ -1,0 +1,52 @@
+.card{
+    padding: 30px;
+}
+.card>.dots{
+    width: 10px;
+    height: 10px;
+    color: grey
+}
+.card__heart{
+    float:right;
+    color: lightgrey;
+}
+.card__details>p{
+    padding:0px;
+    margin:0px;
+    font-size: 14px;
+}
+.card__details>.title{
+    font-weight: 600;
+    color:rgb(163, 163, 163);
+    font-size: 17px;
+}
+.card__details>.span1{
+    font-weight: bold;
+}
+.card__details>.span2{
+    color:lightgrey;
+    padding-left: 7px;
+    text-decoration: line-through;
+}
+.card__details>.span3{
+    color:green;
+    padding-left: 7px;
+    font-weight:700;
+    font-size:14px;
+}
+.productDetails{
+    position:absolute;
+    transition: 0.5s;
+}
+.productDetails>.card__size{
+    position: relative;
+    opacity: 0;
+}
+
+.card:hover>.productDetails{
+    transition: 0.5s;
+    transform: translateY(-20%);
+}
+.card:hover>.productDetails>.card__size{
+    opacity: 1;
+}
